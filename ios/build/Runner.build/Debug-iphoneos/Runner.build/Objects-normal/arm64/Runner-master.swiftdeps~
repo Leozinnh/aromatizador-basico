@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "eeaa31ddc3cce2533dcc477a47098f1f5063bc9119e64f90534f1288a50ff001"
+build_start_time: [1757532332, 339067935]
+build_end_time: [1757532332, 387467861]
+inputs:
+  "/Users/Leozinho/Downloads/aromatizador_BASICO/ios/Runner/AppDelegate.swift": !private [1757531836, 17793893]
