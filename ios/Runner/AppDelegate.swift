@@ -7,10 +7,7 @@ import Flutter
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    // Registrar plugins apenas se necessário
-    if let pluginRegistry = self as? FlutterPluginRegistry {
-      GeneratedPluginRegistrant.register(with: pluginRegistry)
-    }
+    GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }
