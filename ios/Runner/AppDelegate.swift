@@ -1,13 +1,16 @@
 import UIKit
 import Flutter
 
-@main
+@UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
   override func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    GeneratedPluginRegistrant.register(with: self)
+    // Registrar plugins apenas se necessário
+    if let pluginRegistry = self as? FlutterPluginRegistry {
+      GeneratedPluginRegistrant.register(with: pluginRegistry)
+    }
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }
