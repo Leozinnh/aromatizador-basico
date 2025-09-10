@@ -4,8 +4,17 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:location/location.dart';
 import 'dart:async';
 import 'dart:convert';
+import 'dart:developer' as developer;
 
 void main() {
+  FlutterError.onError = (FlutterErrorDetails details) {
+    developer.log(
+      'Flutter Error',
+      error: details.exception,
+      stackTrace: details.stack,
+    );
+  };
+
   runApp(const MyApp());
 }
 
